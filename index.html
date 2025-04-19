@@ -1,1 +1,176 @@
-<h1>Cool Cat Maple Website</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cool Cat Maple</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .header, .about, .products, .contact {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .header img {
+      border-radius: 16px;
+      width: 100%;
+      object-fit: cover;
+    }
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      margin-top: -40px;
+    }
+    .logo-container img {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #f59e0b;
+      font-weight: bold;
+    }
+    p {
+      font-size: 1.125rem;
+      color: #4b5563;
+    }
+    .about img {
+      border-radius: 16px;
+      width: 100%;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .product {
+      background-color: white;
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .product img {
+      border-radius: 16px;
+      width: 100%;
+    }
+    .product h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+    .product p {
+      color: #4b5563;
+    }
+    .contact form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      border: 1px solid #ddd;
+    }
+    .contact button {
+      background-color: #f59e0b;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+    }
+    .footer {
+      text-align: center;
+      font-size: 0.875rem;
+      color: #6b7280;
+      margin-top: 48px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header Section -->
+    <header class="header">
+      <img src="https://via.placeholder.com/800x300?text=Cool+Cat+Maple" alt="Cool Cat Maple Banner">
+      <div class="logo-container">
+        <img src="https://via.placeholder.com/80x80?text=Logo" alt="Cool Cat Maple Logo">
+        <h1>Cool Cat Maple</h1>
+      </div>
+      <p>Pure. Local. Legendary.</p>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+      <h2 class="text-3xl font-semibold mb-4">About Us</h2>
+      <p>Cool Cat Maple is a family-run operation crafting premium, small-batch maple syrup straight from our trees to your table. Our mission is to keep it real, keep it local, and keep it cool.</p>
+      <div class="grid">
+        <img src="https://via.placeholder.com/400x300?text=About+Image+1" alt="About Image 1">
+        <img src="https://via.placeholder.com/400x300?text=About+Image+2" alt="About Image 2">
+        <img src="https://via.placeholder.com/400x300?text=About+Image+3" alt="About Image 3">
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+      <h2>Our Products</h2>
+      <div class="grid">
+        <div class="product">
+          <img src="https://via.placeholder.com/400x200?text=100ML" alt="100ML Maple Syrup">
+          <h3>100ML</h3>
+          <p>$4.50</p>
+        </div>
+        <div class="product">
+          <img src="https://via.placeholder.com/400x200?text=Half+Pint" alt="1/2 Pint Maple Syrup">
+          <h3>1/2 Pint</h3>
+          <p>$9.00</p>
+        </div>
+        <div class="product">
+          <img src="https://via.placeholder.com/400x200?text=Pint" alt="Pint Maple Syrup">
+          <h3>Pint</h3>
+          <p>$14.00</p>
+        </div>
+        <div class="product">
+          <img src="https://via.placeholder.com/400x200?text=Quart" alt="Quart Maple Syrup">
+          <h3>Quart</h3>
+          <p>$20.00</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:info@coolcatmaple.com">info@coolcatmaple.com</a></p>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      &copy; 2025 Cool Cat Maple. All rights reserved.
+    </footer>
+
+  </div>
+
+</body>
+</html>
+
